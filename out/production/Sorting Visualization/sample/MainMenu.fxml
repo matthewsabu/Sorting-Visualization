@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="250.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MainController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="75.0" prefWidth="500.0">
+         <children>
+            <Label text="Sorting Methods">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" layoutX="14.0" layoutY="104.0" prefHeight="81.0" prefWidth="246.0" spacing="25.0">
+         <children>
+            <Label text="Selection Sort">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="selectionButton" mnemonicParsing="false" onAction="#toSelectionSorting" text="Enter" />
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" layoutX="250.0" layoutY="104.0" prefHeight="81.0" prefWidth="246.0" spacing="25.0">
+         <children>
+            <Label text="Bubble Sort">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Button mnemonicParsing="false" onAction="#toBubbleSorting" text="Enter" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
